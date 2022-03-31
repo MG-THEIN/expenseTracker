@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body{
+    background: white;
+}
+
+header,form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+header{
+    height:10vh;
+}
+
+form{
+    height: 20vh;
+    font-size: 1.25rem;
+}
+
+
+form hr{
+    width:100%;
+    margin: 0;
+    padding:0;
+    border: none;
+}
+
+p{
+    margin:0;
+    padding:0;
+    font-size: 1.5rem;
+}
+
+label{
+    margin-right: 0.5rem;
+    padding:0;
+}
+
+.first-line{
+    display:flex;
+    min-width: 60vw;
+}
+
+.item{
+    width: 100%;
+}
+
+.second-line{
+    display: flex;
+    min-width: 60vw;
+}
+
+.date, .quantity{
+    width: 100%;
+}
+
+.date{
+    margin-right: 0.75rem;
+}
+
+.add-expense{
+    height: 2rem;
+    font-size: 1rem;
+    background: rgba(0, 128, 0, 0.75);
+    color:white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    cursor:pointer;
+}
+
+.add-expense:hover{
+    background: rgba(0, 128, 0, 0.95);
+}
+
+.table-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60vw;
+    margin-top: 25px;
+}
+
+.table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9rem;
+    min-width: 60vw;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    transition: all 3s ease;
+}
+
+.table thead tr{
+    background: rgba(83, 73, 226, 0.85);
+    color: white;
+    text-align: left;
+}
+
+.table thead tr th{
+    font-weight: bold;
+}
+
+.table th, .table td{
+    padding: 12px 15px;
+}
+
+.table tbody tr{
+    border-bottom: 1px solid #dddd;
+    transition: all 0.5s ease;
+}
+
+.table tbody tr:nth-of-type(even){
+    background: #f3f3f3;
+}
+
+.table tbody tr:last-of-type{
+    border-bottom: 2px solid rgba(83, 73, 226, 0.85);
+}
+
+.last-col{
+    width: 0.5rem;
+}
+
+.remove-btn{
+    background:rgba(211, 25, 103, 0.75);
+    border: none;
+    cursor: pointer;
+    color: white;
+    height: 1.5rem;
+    border-radius: 5px;
+}
+.remove-btn:hover {
+    background:rgba(211, 25, 103, 0.95);
+}
+
+.fall{
+    transform: translateX(20rem);
+    opacity: 0;
+}
